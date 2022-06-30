@@ -4,9 +4,9 @@ import time
 os.system('cls')
 def intro(): 
     print("Welcome to the Hangman")
-    print("We have some rules: you can try a guess only \033[32m 6 times\33[m. A wrong answer guess and a repeated letter counts as incorrect answer")
+    print("We have some rules: you can try a guess only \033[32m 6 times\33[m. Letters which aren't present in the word and also letters already tapped counts as incorrect answer")
     print('----')
-list=["eevee", "girafarig",  "alomomola"]
+list=["eevee", "girafarig",  "alomomola","suitcase", "proportion", "stimulation", "theft" ,"paint" ,"measure", "pollution ","shareholder","copy"]
 targetword=list[rad.randint(0,len(list)-1)] #draw a word to be figured out by the player
 back=[]
 chances=6
